@@ -78,7 +78,8 @@
  *  ├ = &#9500
  *  ─ = &#9472
  *  └ = &#9492
- *  │ = &#9474
+ *  │ = Is special because it doesn't work. I ended up putting 'PIPE' in the HTML
+ *      and replacing it in the typeParas function.
  */
 
 prepDivs();
@@ -133,6 +134,9 @@ function getParas(element) {
 function typeParas(paras, index, callback) {
     let para = paras[index];
     let text = para.textContent;
+
+    text = text.replace('PIPE', '│');
+
     let typeSpeed = parseInt(getAttrib(para, 'type-speed', '0'));
     let pause = parseInt(getAttrib(para, 'pause', '100'));
 
