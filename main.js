@@ -72,6 +72,12 @@
  * uses to continue typing out the next pre tag.
  * 
  * Thanks for reading.
+ * 
+ * Side Note: HTML requires that any UTF-8 characaters be specified using decimal,
+ * which I have outlined here:
+ *  ├ = &#9500
+ *  ─ = &#9472
+ *  └ = &#9492
  */
 
 prepDivs();
