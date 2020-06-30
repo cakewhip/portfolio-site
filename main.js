@@ -72,14 +72,6 @@
  * uses to continue typing out the next pre tag.
  * 
  * Thanks for reading.
- * 
- * Side Note: HTML requires that any UTF-8 characaters be specified using decimal,
- * which I have outlined here:
- *  ├ = &#9500
- *  ─ = &#9472
- *  └ = &#9492
- *  │ = Is special because it doesn't work. I ended up putting 'PIPE' in the HTML
- *      and replacing it in the typeParas function.
  */
 
 prepDivs();
